@@ -43,7 +43,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class solution {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
