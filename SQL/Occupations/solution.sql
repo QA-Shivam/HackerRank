@@ -6,3 +6,5 @@ MAX(IF(OCCUPATION="Actor", NAME, Null)) AS Actor
 FROM
 (SELECT NAME, OCCUPATION, ROW_NUMBER() OVER(PARTITION BY OCCUPATION ORDER BY NAME )
 AS ROW_NO FROM OCCUPATIONS) as occupation_rows GROUP By ROW_NO;
+
+Note: Every derived table (subquery in the FROM clause) must have its own alias.
